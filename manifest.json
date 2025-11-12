@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Matrix Homepage",
+  "version": "1.0",
+  "description": "Replaces the Homepage with a Matrix-style flowing code background.",
+
+  "chrome_url_overrides": {
+    "newtab": "matrix.html"
+  },
+
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["matrix.css", "matrix.js", "icon.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
